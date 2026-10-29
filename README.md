@@ -1,4 +1,4 @@
-# Josh's Homebrew tools
+# Homebrew tools
 
 Personal Homebrew casks maintained by [fbajosh](https://github.com/fbajosh).
 
@@ -9,7 +9,7 @@ brew install --cask fbajosh/tools/utilipilled
 open -a Utilipilled
 ```
 
-The first release supports Apple silicon on macOS 13 or later. It is ad-hoc signed and not notarized. If macOS blocks opening it, attempt to open Utilipilled, then use System Settings → Privacy & Security → Open Anyway. Homebrew's quarantine and Gatekeeper checks are left intact. No Apple Developer membership is needed to use this release.
+Published binaries support Apple silicon on macOS 13 or later. It is ad-hoc signed and not notarized. If macOS blocks opening it, attempt to open Utilipilled, then use System Settings → Privacy & Security → Open Anyway. Homebrew's quarantine and Gatekeeper checks are left intact. No Apple Developer membership is needed to use this release.
 
 Utilipilled starts with its Camera Quiet module, which temporarily silences system alerts during camera use. It leaves notification banners and media output volume alone. Other system alert sounds are also quiet; this is not a Messages-only mute.
 
@@ -28,7 +28,7 @@ The cask requests an orderly quit during upgrades and uninstallation so the came
 
 ## Maintenance
 
-Publish a versioned app ZIP with the Utilipilled GitHub release, then update `Casks/utilipilled.rb` with its version and SHA-256. The checksum must match the release asset exactly. Do not replace a published asset in place. Run `brew style --cask fbajosh/tools/utilipilled`, and test installation/upgrades/uninstallation before publishing a tap update. The unsigned first release will not pass a notarization/Gatekeeper audit for admission to Homebrew's official catalog.
+Publish a versioned app ZIP with the Utilipilled GitHub release, then update `Casks/utilipilled.rb` with its version and SHA-256. The checksum must match the release asset exactly. Do not replace a published asset in place. Run `brew style --cask fbajosh/tools/utilipilled`, and test installation/upgrades/uninstallation before publishing a tap update.
 
 ## Renamed from JoshTools
 
