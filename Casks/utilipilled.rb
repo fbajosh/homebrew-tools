@@ -1,6 +1,6 @@
 cask "utilipilled" do
-  version "1.6.1"
-  sha256 "b6b85e19f585c1af561d926eafb096a2babbeaaefb9a9e3bf70f39ae7c5c0488"
+  version "1.6.2"
+  sha256 "b3ec30d8ab481ec643bc14e51983033da50c4759577c3dcec0d89a4a95107ba9"
 
   url "https://github.com/fbajosh/Utilipilled/releases/download/v#{version}/Utilipilled-#{version}-macOS-arm64.zip"
   name "Utilipilled"
